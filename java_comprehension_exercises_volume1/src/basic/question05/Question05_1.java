@@ -28,7 +28,7 @@ public class Question05_1 {
 
 		int age = Integer.parseInt(name);
 
-		if (age <= 20) {
+		if (age < 20) {
 
 			System.out.println("20 歳未満なので、お酒の提供ができません。");
 

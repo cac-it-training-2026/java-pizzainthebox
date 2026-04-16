@@ -32,7 +32,7 @@ public class Question04_2 {
 
 		int temporaryAge = Integer.parseInt(input);
 
-		ageGroup[4] = temporaryAge;
+		ageGroup[3] = temporaryAge;
 
 		System.out.println("4 番目の人の年齢は" + ageGroup[4] + "歳です。");
 		System.out.println("人数は" + ageGroup.length + "です。");

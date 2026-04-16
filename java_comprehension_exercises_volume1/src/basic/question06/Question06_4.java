@@ -36,27 +36,23 @@ public class Question06_4 {
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-		int amountBooks = 0;
+		int amountBox = 0;
 		int sellFlag = 0;
-		int bookPrice = 0;
+		int bookprice = 200;
 
 		System.out.println("本を売却します。");
 
 		do {
-
-			amountBooks++;
-
+			++amountBox;
 			System.out.println("売却する本の冊数を 1 つ増やしますか？");
-			System.out.print("はい：0、いいえ：1 >");
+			System.out.println("はい：0、いいえ：1");
 
-			String input = reader.readLine();
-			sellFlag = Integer.parseInt(input);
+			String str = reader.readLine();
+
+			sellFlag = Integer.parseInt(str);
 
 		} while (sellFlag == 0);
 
-		System.out.println("売却する本の冊数は " + amountBooks + " 冊です。");
-
-		System.out.println("売却した本の合計金額は " + (amountBooks * bookPrice) + " 円です。");
-
+		System.out.println("売却した合計金額は" + amountBox * bookprice + "円です。");
 	}
 }
